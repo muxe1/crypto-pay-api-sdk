@@ -46,13 +46,6 @@ print(Crypto.createInvoice("TON", "0.4", params={"description": "Test Invoice",
 * [getExchangeRates](#getExchangeRates)
 * [getCurrencies](#getCurrencies)
 
-**Updates**
-
-* [on](#on)
-* [invoicePaid](#invoicePaid)
-* [once](#once)
-* [off](#off)
-
 ### getMe
 
 A simple method for testing your app's authentication token. Requires no parameters. Returns basic information about the app.
