@@ -58,7 +58,7 @@ print(Crypto.createInvoice("TON", "0.4", params={"description": "Test Invoice",
 A simple method for testing your app's authentication token. Requires no parameters. Returns basic information about the app.
 
 ```python
-Crypto.getMe();
+Crypto.getMe()
 ```
 
 ### createInvoice
@@ -98,7 +98,7 @@ Crypto.createInvoice("BTC", 1,
                         description: 'kitten',
                         paid_btn_name: PaidButtonNames.VIEW_ITEM,
                         paid_btn_url: 'http://placekitten.com/150'
-                    });
+                    })
 ```
 
 ### transfer
@@ -121,7 +121,7 @@ Crypto.transfer(121011054, 'ETH',
                 0.1, 'ZG9uYXRl',
                 params = {
                     comment: 'donate'
-                });
+                })
 ```
 
 ### getInvoices
@@ -140,7 +140,7 @@ Use this method to get invoices of your app. On success, the returns array of in
 *Optional*. Number of invoices to return. Default 100, max 1000.
 
 ```python
-Crypto.getInvoices(assets = "TON", count = 1);
+Crypto.getInvoices(assets = "TON", count = 1)
 ```
 
 ### getBalance
@@ -148,7 +148,7 @@ Crypto.getInvoices(assets = "TON", count = 1);
 Use this method to get balance of your app. Returns array of assets.
 
 ```python
-Crypto.getBalance();
+Crypto.getBalance()
 ```
 
 ### getExchangeRates
@@ -156,7 +156,7 @@ Crypto.getBalance();
 Use this method to get exchange rates of supported currencies. Returns array of currencies.
 
 ```python
-Crypto.getExchangeRates();
+Crypto.getExchangeRates()
 ```
 
 ### getCurrencies
@@ -164,7 +164,7 @@ Crypto.getExchangeRates();
 Use this method to supported currencies. Returns array of currencies.
 
 ```python
-Crypto.getCurrencies();
+Crypto.getCurrencies()
 ```
 
 ## License
