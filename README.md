@@ -89,7 +89,7 @@ Amount of the invoice in float. For example: `125.50`
 Crypto.createInvoice("BTC", 1,
                     params = {
                         description: 'kitten',
-                        paid_btn_name: PaidButtonNames.VIEW_ITEM,
+                        paid_btn_name: viewItem,
                         paid_btn_url: 'http://placekitten.com/150'
                     })
 ```
