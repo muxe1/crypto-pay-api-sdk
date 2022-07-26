@@ -5,13 +5,11 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 # Installation
----
 ```sh
 pip install crypto-pay-api-sdk
 ```
 
 # Explanation
----
 
 First, you need to create your application and get an API token.
 Open [@CryptoBot](http://t.me/CryptoBot?start=pay) or [@CryptoTestnetBot](http://t.me/CryptoTestnetBot?start=pay) (for testnet), end a command `/pay` to create a new app and get API Token.
@@ -24,7 +22,6 @@ Open [@CryptoBot](http://t.me/CryptoBot?start=pay) or [@CryptoTestnetBot](http:/
 
 
 # Examples
----
 **Support for all methods [official API](https://help.crypt.bot/crypto-pay-api)**
 ```python
 from crypto_pay_api_sdk import cryptopay
@@ -171,5 +168,4 @@ Crypto.getCurrencies();
 ```
 
 ## License
----
 MIT
