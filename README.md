@@ -2,7 +2,7 @@
 # @muxel/crypto-pay-api-sdk
 ## [SDK for working with Crypto Bot](https://t.me/CryptoBot)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]
+![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
 
 # Installation
 ```sh
