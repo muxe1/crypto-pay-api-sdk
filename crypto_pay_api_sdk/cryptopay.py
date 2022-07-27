@@ -18,7 +18,7 @@ class Crypto:
             self.url = 'https://pay.crypt.bot/api'   
         self.headers = {'Content-Type': 'application/json', 'Crypto-Pay-API-Token': self.token}  
         
-    def getMe(self):
+    def getMe(self) -> (dict):
         """A simple method for testing your app's authentication token.
         
         Args:
@@ -29,7 +29,7 @@ class Crypto:
         """             
         return get(f'{self.url}/getMe', headers=self.headers).json()
     
-    def createInvoice(self, asset: str, amount: str, params= {}):
+    def createInvoice(self, asset: str, amount: str, params= {}) -> (dict):
         """Use this method to create a new invoice.
 
         Args:
@@ -65,7 +65,7 @@ class Crypto:
                         ).json()     
         
 
-    def transfer(self, user_id: int, asset: str, amount: str, spend_id: str, params = {}):
+    def transfer(self, user_id: int, asset: str, amount: str, spend_id: str, params = {}) -> (dict):
         """Use this method to send coins from your app to the user.
 
         Args:
@@ -93,7 +93,7 @@ class Crypto:
                                 **params}
                         ).json() 
 
-    def getInvoices(self):
+    def getInvoices(self) -> (dict):
         """Use this method to get invoices of your app
         
         Args:
@@ -113,7 +113,7 @@ class Crypto:
         """
         return get(f'{self.url}/getInvoices', headers=self.headers).json()        
        
-    def getBalance(self):
+    def getBalance(self) -> (dict):
         """Use this method to get balance of your app
 
         Args:
@@ -124,7 +124,7 @@ class Crypto:
         """
         return get(f'{self.url}/getBalance', headers=self.headers).json()
         
-    def getExchangeRates(self):
+    def getExchangeRates(self) -> (dict):
         """Use this method to get exchange rates of supported currencies
 
         Args:
@@ -135,7 +135,7 @@ class Crypto:
         """
         return get(f'{self.url}/getExchangeRates', headers=self.headers).json()  
         
-    def getCurrencies(self):
+    def getCurrencies(self) -> (dict):
         """Use this method to supported currencies
 
         Args:
