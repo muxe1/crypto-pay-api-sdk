@@ -9,7 +9,7 @@ setup(
     name = 'crypto_pay_api_sdk',
     author = 'Vyacheslav Zhigulin',
     author_email = 'muxellexum@gmail.com',
-    url = 'https://github.com/althonos/crypto-pay-api-sdk',
+    url = 'https://github.com/sllavon/crypto-pay-api-sdk',
     description = 'API for CryptoBot',
     long_description = long_description,
     long_description_content_type = 'text/markdown',
