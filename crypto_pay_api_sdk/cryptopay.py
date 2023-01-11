@@ -91,28 +91,28 @@ class Crypto:
                                 'amount': amount,
                                 'spend_id': spend_id,
                                 **params}
-                        ).json() 
+                        ).json()
 
-    def getInvoices(self) -> (dict):
+    def getInvoices(self, params={}) -> (dict):
         """Use this method to get invoices of your app
-        
+
         Args:
-            asset - Optional. Currency code.
+            asset -- Optional. Currency code.
             Supported assets: `BTC`, `TON`, `ETH` (only testnet), `USDT`, `USDC`, `BUSD`. Default: all assets
-            
+
             invoice_ids {string} - Optional. Invoice `IDs` separated by comma
-            
+
             status {string} - Optional. Status of invoices. Available statusses: active or paid. `Default: all statusses`
-            
+
             offset {number} - Optional. Offset needed to return a specific subset of invoices. `Default 0`
-            
+
             count {number} - Optional. Number of invoices to return. `Default 100, max 1000`
-            
+
         Returns:
             Array of invoices
         """
-        return get(f'{self.url}/getInvoices', headers=self.headers).json()        
-       
+        return get(f'{self.url}/getInvoices', headers=self.headers, json={**params}).json()
+
     def getBalance(self) -> (dict):
         """Use this method to get balance of your app
 

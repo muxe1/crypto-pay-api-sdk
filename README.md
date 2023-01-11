@@ -133,7 +133,7 @@ Use this method to get invoices of your app. On success, the returns array of in
 *Optional*. Number of invoices to return. Default 100, max 1000.
 
 ```python
-Crypto.getInvoices(assets = "TON", count = 1)
+Crypto.getInvoices(params = {'asset': "TON", 'count': 1})
 ```
 
 ### getBalance
